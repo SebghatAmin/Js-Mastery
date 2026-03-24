@@ -89,8 +89,8 @@ const App = () => {
         <header>
           <img src="./hero.png" alt="Hero Banner" />
           <h1>
-            Find <span className="text-gradient">Movies</span> You'll Enjoy
-            Without the Hassle
+            <span className="text-gradient">فیلم </span>
+            های مورد نظرتانرا راحت بیابید
           </h1>
 
           <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
@@ -98,7 +98,7 @@ const App = () => {
 
         {trendingMovies?.length > 0 && (
           <section className="trending">
-            <h2>Trending Movies</h2>
+            <h2>فیلم های مشهور</h2>
 
             <ul>
               {trendingMovies.map((movie, index) => (
@@ -112,7 +112,7 @@ const App = () => {
         )}
 
         <section className="all-movies">
-          <h2>All Movies</h2>
+          <h2>تمام فیلم ها</h2>
 
           {isLoading ? (
             <Spinner />
