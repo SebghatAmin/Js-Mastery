@@ -93,7 +93,7 @@ const App = () => {
             های مورد نظرتانرا راحت بیابید
           </h1>
 
-          <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+          <Search setSearchTerm={setSearchTerm} searchTerm={searchTerm} />
         </header>
 
         {trendingMovies?.length > 0 && (
